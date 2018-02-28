@@ -1,0 +1,380 @@
+.input-custom {
+	appearance: none;
+	margin-bottom: 4px;
+	padding: 13px 15px 13px;
+	font-size: 16px;
+	line-height: 20px;
+	height: 46px;
+	background: #fff;
+	border: 0;
+	border-radius: 2px;
+	color: #000;
+	.box-shadow (none);
+	&:hover,
+	&:focus,
+	&.focus {
+		.box-shadow (none);
+		outline: none;
+	}
+	&.input-full {
+		width: 100%;
+	}
+}
+.textarea-custom {
+	.input-custom;
+	min-height: 235px;
+	height: auto;
+}
+.input-wrapper {
+	position: relative;
+}
+.placeholder {
+	font-size: 16px;
+	line-height: 20px;
+	color: #686969;
+}
+input::-webkit-input-placeholder {
+	.placeholder
+}
+input::-moz-placeholder {
+	.placeholder
+}
+input:-ms-input-placeholder {
+	.placeholder
+}
+input:-moz-placeholder {
+	.placeholder
+}
+.required {
+	color: red;
+}
+input.input-custom,
+textarea.textarea-custom,
+.select-wrapper select.input-custom,
+.select-wrapper select.select-custom {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+// select
+.select-wrapper {
+	position: relative;
+	&:before {
+		content: '\25BE';
+		position: absolute;
+		right: 1px;
+		top: 1px;
+		bottom: 1px;
+		width: 44px;
+		height: 44px;
+		font-size: 14px;
+		line-height: 44px;
+		pointer-events: none;
+		color: #000;
+		text-align: center;
+		background-color: #fff;
+	}
+	select {
+		padding-right: 50px;
+		padding-left: 15px;
+		height: 46px;
+		width: 100%;
+		background-color: #fff;
+		color: #2b2b2b;
+		border: 0;
+	}
+}
+select {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+/*for IE10*/
+
+select::-ms-expand {
+	display: none;
+}
+// contact form
+.contact-form {
+	margin-bottom: 15px;
+	margin-top: 20px;
+	.input-custom,
+	.textarea-custom {
+		margin-bottom: 15px;
+		border: 1px solid #dbdbdb;
+		padding: 16px 15px 17px;
+		height: 50px;
+	}
+}
+label {
+	font-size: 17px;
+	line-height: 24px;
+	font-weight: 500;
+	margin-bottom: 5px;
+	color: #000;
+}
+form label.error {
+	display: block;
+	color: #ff0000;
+	font-size: 14px !important;
+	margin-top: -15px;
+	opacity: 1 !important;
+}
+#success,
+#error,
+.successform,
+.errorform {
+	display: none;
+}
+#success span,
+#error span,
+.successform span,
+.errorform span {
+	display: block;
+}
+#success span p,
+#error span p,
+.successform span p,
+.errorform span p {
+	margin-top: 15px;
+}
+#success span p,
+.successform span p {
+	color: #2990d6;
+}
+#error span p,
+.errorform span p {
+	color: #c0392b;
+}
+//popup form
+.form-popup-wrap {
+	display: inline-block;
+	position: relative;
+	&-full {
+		width: 100%;
+	}
+}
+.form-popup {
+	position: absolute;
+	z-index: 101;
+	width: 865px;
+	left: 50%;
+	margin-left: -433px;
+	visibility: hidden;
+	top: 100px;
+	opacity: 0;
+	text-align: left;
+	.transition (top .3s);
+	&.form-popup-top {
+		top: auto;
+		bottom: 100px;.transition (bottom .3s);
+	}
+	@media (max-width: 991px) {
+		width: 740px;
+		margin-left: -370px;
+	}
+	@media (max-width: 767px) {
+		width: 100%;
+		margin-left: -50%;
+	}
+	&.opened {
+		opacity: 1;
+		top: 70px;
+		visibility: visible;
+		&.form-popup-top {
+			top: auto;
+			bottom: 70px;
+		}
+	}
+}
+.request-form-popup {
+	padding: 29px 30px 35px 36px;
+	position: relative;
+	background: url('../images/request-form-bg.jpg') repeat-y;
+	background-size: 100% auto;
+	@media (max-width: 991px) {
+		background-size: cover;
+	}
+	color: #fff;
+	font-size: 16px;
+	.form-row:not(:first-child) {
+		margin-top: 25px;
+	}
+	form > .row {
+		margin-top: 37px;
+	}
+	p {
+		font-size: 16px;
+	}
+	.p-label {
+		font-size: 18px;
+		line-height: 22px;
+		margin-bottom: 5px;
+		font-weight: 600;
+	}
+	h3 {
+		font-size: 42px;
+		line-height: 55px;
+		color: #fff;
+		margin: 0 0 7px;
+		padding: 0;
+	}
+	input[type="text"],
+	textarea {
+		display: block;
+		height: 43px;
+		color: #686969;
+		font-size: 15px;
+		line-height: 24px;
+		padding: 15px 15px;
+		border-radius: 4px;
+		background-color: #fff;
+		border: 0;
+		margin-bottom: 14px;
+		width: 100%;
+	}
+	.select-wrapper {
+		margin-top: 10px;
+	}
+	.select-wrapper select {
+		height: 43px;
+		color: #686969;
+		border-radius: 4px;
+	}
+	.select-wrapper:before {
+		line-height: 41px;
+		height: 41px;
+		border-radius: 4px;
+	}
+	textarea {
+		height: 112px;
+	}
+	label {
+		color: #fff;
+	}
+	label.error {
+		margin-top: -5px;
+		font-size: 12px !important;
+		line-height: 12px;
+		margin-bottom: 10px;
+		color: #fff;
+	}
+	.btn[type='submit'] {
+		min-width: 165px;
+		margin-top: 5px;
+	}
+	.radio + .clearfix {
+		margin-top: 10px;
+	}
+	.radio {
+		margin: 0 18px 0 12px;
+		display: inline-block;
+		label {
+			padding-left: 14px;
+			font-size: 16px;
+			line-height: 18px;
+			font-weight: 400;
+			vertical-align: middle;
+		}
+		input[type="radio"] {
+			position: absolute;
+			opacity: 0;
+			+ .radio-label {
+				&:before {
+					content: '';
+					background: transparent;
+					border-radius: 100%;
+					border: 2px solid #fff;
+					display: inline-block;
+					width: 17px;
+					height: 17px;
+					position: relative;
+					top: 0;
+					margin-left: -24px;
+					margin-right: 10px;
+					vertical-align: top;
+					cursor: pointer;
+					text-align: center;
+					.transition (all .2s ease);
+				}
+			}
+			&:checked {
+				+ .radio-label {
+					&:before {
+						background-color: #fff;
+						box-shadow: inset 0 0 0 2px #3587b6;
+					}
+				}
+			}
+			&:focus {
+				+ .radio-label {
+					&:before {
+						outline: none;
+						border-color: #fff;
+					}
+				}
+			}
+			&:disabled {
+				+ .radio-label {
+					&:before {
+						box-shadow: inset 0 0 0 2px #3587b6;
+						border-color: #fff;
+						background: darken(#f4f4f4, 25%);
+					}
+				}
+			}
+			+ .radio-label {
+				&:empty {
+					&:before {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+}
+.form-modal {
+	position: relative;
+	max-width: 866px;
+	margin: 20px auto;
+	display: none;
+	@media (max-width: 991px) {
+		width: 740px;
+	}
+	@media (max-width: 767px) {
+		width: 90%;
+	}
+	.quote-form {
+		position: relative;
+		&:after,
+		&:before {
+			display: none;
+		}
+	}
+}
+.mfp-content .form-modal {
+	display: block;
+}
+.mfp-fade.mfp-bg {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-bg.mfp-ready {
+	opacity: 0.8;
+}
+.mfp-fade.mfp-bg.mfp-removing {
+	opacity: 0;
+}
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	-webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	transition: all 0.15s ease-out;
+}
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+	opacity: 1;
+}
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+	opacity: 0;
+}

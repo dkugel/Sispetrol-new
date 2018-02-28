@@ -1,0 +1,65 @@
+.service-banner {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+	z-index: 1;
+	min-height: 130px;
+	text-decoration: none;
+	@media (max-width: 767px) {
+		margin-bottom: 25px;
+	}
+	&-image {
+		width: 100%;
+	}
+	&-title {
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		bottom: 0;
+		right: 20px;
+		width: 50%;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
+		h6 {
+			color: #fff;
+			text-transform: uppercase;
+		}
+	}
+	&-more-link {
+		position: absolute;
+		right: -2px;
+		bottom: 10px;
+		.transition (all 0.3s ease);
+		span {
+			font-size: 28px;
+			color: #fff;
+			text-decoration: none;
+		}
+		&:hover {
+			right: -5px;
+			opacity: 0.8;
+		}
+	}
+	&-bg {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		width: 80%;
+		content: '';
+		background-color: @custom-color;
+		.transform (skew(-15deg) translateX(23%));
+		.transition (.35s);
+	}
+	&:hover .service-banner-bg,
+	&.active .service-banner-bg {
+		background-color: #2ea5e9;
+		width: 85%;
+	}
+}

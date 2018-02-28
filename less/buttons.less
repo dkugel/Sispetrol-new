@@ -1,0 +1,113 @@
+button,
+.btn {
+	&,
+	&:active,
+	&.active {
+		&:focus,
+		&.focus {
+			outline: 0;
+			outline: none;
+			.box-shadow(none);
+		}
+	}
+	&:hover,
+	&:focus,
+	&.focus {
+		outline: 0;
+		outline: none;
+		.box-shadow(none);
+	}
+	&:active,
+	&.active {
+		outline: 0;
+		outline: none;
+		.box-shadow(none);
+	}
+	&.pull-right {
+		margin-right: 10px;
+	}
+}
+.btn {
+	padding: 15px 22px;
+	font-family: @custom-font-2;
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 700;
+	height: 51px;
+	border-radius: 10px;
+	vertical-align: top;
+	border: 1px solid @button-bg;
+	text-transform: uppercase;
+	.transition (all 300ms ease);
+	text-decoration: none;
+	&,
+	&.focus,
+	&:focus {
+		background-color: @button-bg;
+		color: @button-color;
+	}
+	&:hover,
+	&.active,
+	&:active {
+		background: #fff;
+		color: @button-bg;
+	}
+	span {
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	&.btn-md {
+		height: 61px;
+		font-size: 16px;
+		line-height: 21px;
+		padding: 20px 40px;
+		border-radius: 10px;
+	}
+	&.btn-lg {
+		height: 66px;
+		font-size: 20px;
+		line-height: 26px;
+		padding: 20px 30px;
+		border-radius: 10px;
+	}
+}
+.btn-light {
+	&,
+	&.focus,
+	&:focus {
+		background-color: @custom-color-light;
+		color: @button-color;
+		border-color: @custom-color-light;
+	}
+	&:hover,
+	&.active,
+	&:active {
+		background: #fff;
+		color: @custom-color-light;
+	}
+}
+.btn.btn-orange {
+	&,
+	&.focus,
+	&:focus {
+		background: #ff9a37;
+		background: -moz-linear-gradient(top, #ff9a37 0%, #ff8427 100%);
+		background: -webkit-linear-gradient(top, #ff9a37 0%, #ff8427 100%);
+		background: linear-gradient(to bottom, #ff9a37 0%, #ff8427 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9a37', endColorstr='#ff8427', GradientType=0);
+		.box-shadow (0 1px 1px rgba(0, 0, 0, .2));
+		color: #fff;
+		border: 0;
+	}
+	&:hover,
+	&.active,
+	&:active {
+		background: #ff8427;
+		background: -moz-linear-gradient(top, #ff8427 0%, #ff9a37 100%);
+		background: -webkit-linear-gradient(top, #ff8427 0%, #ff9a37 100%);
+		background: linear-gradient(to bottom, #ff8427 0%, #ff9a37 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8427', endColorstr='#ff9a37', GradientType=0);
+		color: #fff;
+	}
+}
