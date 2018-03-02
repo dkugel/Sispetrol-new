@@ -777,7 +777,7 @@ body.slide-active {
 /* back to top button */
 .back-to-top {
   position: absolute;
-  bottom: 185px;
+  bottom: 115px;
   right: 1%;
 }
 @media (max-width: 1199px) {
@@ -993,7 +993,7 @@ p.font30 {
   }
 }
 .color {
-  color: #005395;
+  color: #4667ae;
 }
 h1,
 h2 {
@@ -1525,7 +1525,7 @@ ul.service-list-1 li.active a:after {
   width: 100%;
   height: 100%;
   z-index: 10000000;
-  background-color: #28bceb;
+  background-color: #4667ae;
 }
 #loader-wrapper.loader-off {
   display: none !important;
@@ -2253,8 +2253,8 @@ button.pull-right,
   -o-transition: all 0.2s ease;
 }
 .tags-list li a:hover {
-  background-color: #005395;
-  border-color: #005395;
+  background-color: #3f4081;
+  border-color: #3f4081;
   color: #fff;
 }
 /*---------------------------------------*/
@@ -2276,12 +2276,12 @@ button.pull-right,
   z-index: 1;
   overflow: hidden;
   margin: 0 auto 45px;
-  background-color: #27b9e8;
-  background: -webkit-gradient(linear, left top, left bottom, from(#27b9e8), to(#0b6fac));
-  background: -webkit-linear-gradient(top, #27b9e8, #0b6fac);
-  background: -moz-linear-gradient(top, #27b9e8, #0b6fac);
-  background: -ms-linear-gradient(top, #27b9e8, #0b6fac);
-  background: -o-linear-gradient(top, #27b9e8, #0b6fac);
+  background-color: #4667ae;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4667ae), to(#3f4081));
+  background: -webkit-linear-gradient(top, #4667ae, #3f4081);
+  background: -moz-linear-gradient(top, #4667ae, #3f4081);
+  background: -ms-linear-gradient(top, #4667ae, #3f4081);
+  background: -o-linear-gradient(top, #4667ae, #3f4081);
   color: #fff;
 }
 .service-item .icon-circle .icon {
@@ -2472,7 +2472,7 @@ button.pull-right,
   top: 0;
   bottom: 0;
   content: '';
-  background-color: rgba(40, 168, 225, 0.95);
+  background-color: #4667ae;
   -webkit-transform: skew(59deg) translateX(-75%);
   -ms-transform: skew(59deg) translateX(-75%);
   transform: skew(59deg) translateX(-75%);
@@ -2959,12 +2959,12 @@ h2 + .category-carousel {
   line-height: 82px;
   font-size: 20px;
   font-weight: bold;
-  background-color: #27b9e8;
-  background: -webkit-gradient(linear, left top, left bottom, from(#27b9e8), to(#0b6fac));
-  background: -webkit-linear-gradient(top, #27b9e8, #0b6fac);
-  background: -moz-linear-gradient(top, #27b9e8, #0b6fac);
-  background: -ms-linear-gradient(top, #27b9e8, #0b6fac);
-  background: -o-linear-gradient(top, #27b9e8, #0b6fac);
+  background-color: #4667ae;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4667ae), to(#3f4081));
+  background: -webkit-linear-gradient(top, #4667ae, #3f4081);
+  background: -moz-linear-gradient(top, #4667ae, #3f4081);
+  background: -ms-linear-gradient(top, #4667ae, #3f4081);
+  background: -o-linear-gradient(top, #4667ae, #3f4081);
 }
 .text-icon-icon span .icon {
   position: relative;
@@ -2981,7 +2981,7 @@ h2 + .category-carousel {
   width: 100%;
   height: 100%;
   opacity: 0;
-  background: #005395;
+  background: #4667ae;
   -webkit-transition: opacity 0.3s ease;
   -moz-transition: opacity 0.3s ease;
   -ms-transition: opacity 0.3s ease;
