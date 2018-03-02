@@ -2391,6 +2391,7 @@ button.pull-right,
   font-weight: 700;
   text-transform: uppercase;
   color: #fff;
+  text-shadow: 1px 1px #3f4081;
 }
 .category-item .category-price {
   position: absolute;
