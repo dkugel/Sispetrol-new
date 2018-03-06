@@ -76,6 +76,9 @@
 body,
 html {
   overflow-x: hidden;
+  background: url(../images/4291.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .block {
   margin-bottom: 90px;
@@ -178,6 +181,7 @@ header .header-top {
 }
 header .logo img {
   max-width: 100%;
+  padding-top: 5px;
 }
 header .slogan {
   padding: 30px 0 0 0;
@@ -237,7 +241,7 @@ body:not(.home) header.page-header {
     background-color: transparent;
     border: 0;
     border-radius: 0;
-    min-height: 70px;
+    min-height: 125px;
     margin-bottom: 0;
     padding: 0;
   }
@@ -247,7 +251,8 @@ body:not(.home) header.page-header {
   #slidemenu {
     padding-right: 0;
     padding-left: 0;
-    text-align: center;
+    text-align: right;
+    height: 125px;
   }
   .nav .open > a,
   .nav .open > a:focus,
@@ -257,13 +262,13 @@ body:not(.home) header.page-header {
   }
   .navbar-nav {
     float: none;
-    margin: 0 auto -5px;
+    margin: 10px auto -5px;
     display: inline-block;
   }
   .navbar-nav > li > a {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 30px;
-    padding: 22px 30px;
+    padding: 40px 15px;
     text-transform: uppercase;
     color: #333;
     font-weight: bold;
@@ -1016,7 +1021,7 @@ h2 {
 }
 h1.decor,
 h2.decor {
-  padding: 0 0 48px;
+  padding: 0 0 30px;
   margin-bottom: 33px;
   background: url(../images/h-decor.png) no-repeat center bottom;
 }

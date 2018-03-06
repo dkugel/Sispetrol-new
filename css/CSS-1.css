@@ -1,0 +1,28 @@
+.contenedor-slider{
+    width: 80% !important;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom:  20px;
+}
+.subtitulo {
+    font-size: 30px !important;
+    color: #4c4c4c;
+}
+.subtitulo p{
+    font-size: 25px !important;
+    line-height: 28px !important;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.media-margen{
+    margin-top: 100%;
+}
+@media (min-width: 768px) {
+    .carousel-control {
+        font-size: 40px;
+    }
+}
+.carousel-indicators li {
+    background-color: #345eb8;
+    border: 1px solid #345eb8;
+}
