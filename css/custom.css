@@ -175,6 +175,8 @@ header.page-header {
   margin: 0;
   border: 0;
   font-weight: normal;
+  max-height: 100px !important;
+  background: linear-gradient(white, #bdbdbd);
 }
 header .header-top {
   padding: 15px 0;
@@ -262,7 +264,7 @@ body:not(.home) header.page-header {
   }
   .navbar-nav {
     float: none;
-    margin: 10px auto -5px;
+    margin: 0px auto -5px;
     display: inline-block;
   }
   .navbar-nav > li > a {
@@ -2274,8 +2276,8 @@ button.pull-right,
 .service-item .icon-circle {
   display: block;
   text-decoration: none;
-  width: 196px;
-  height: 196px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   position: relative;
   z-index: 1;
@@ -2291,7 +2293,7 @@ button.pull-right,
 }
 .service-item .icon-circle .icon {
   font-size: 94px;
-  line-height: 196px;
+  line-height: 150px;
 }
 .service-item .icon-circle .icon-hover {
   position: absolute;
