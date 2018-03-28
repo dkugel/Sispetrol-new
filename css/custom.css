@@ -76,6 +76,9 @@
 body,
 html {
   overflow-x: hidden;
+  background: url(../images/4291.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .block {
   margin-bottom: 90px;
@@ -172,12 +175,15 @@ header.page-header {
   margin: 0;
   border: 0;
   font-weight: normal;
+  max-height: 100px !important;
+  background: linear-gradient(white, #bdbdbd);
 }
 header .header-top {
   padding: 15px 0;
 }
 header .logo img {
   max-width: 100%;
+  padding-top: 5px;
 }
 header .slogan {
   padding: 30px 0 0 0;
@@ -237,7 +243,7 @@ body:not(.home) header.page-header {
     background-color: transparent;
     border: 0;
     border-radius: 0;
-    min-height: 70px;
+    min-height: 125px;
     margin-bottom: 0;
     padding: 0;
   }
@@ -251,6 +257,7 @@ body:not(.home) header.page-header {
     text-align: center;
     margin-right: -100px;
     margin-left: -100px;
+
   }
   .nav .open > a,
   .nav .open > a:focus,
@@ -260,13 +267,13 @@ body:not(.home) header.page-header {
   }
   .navbar-nav {
     float: none;
-    margin: 0 auto -5px;
+    margin: 0px auto -5px;
     display: inline-block;
   }
   .navbar-nav > li > a {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 30px;
-    padding: 22px 30px;
+    padding: 40px 15px;
     text-transform: uppercase;
     color: #fff;
     -webkit-transition: all 200ms ease;
@@ -1019,7 +1026,7 @@ h2 {
 }
 h1.decor,
 h2.decor {
-  padding: 0 0 48px;
+  padding: 0 0 30px;
   margin-bottom: 33px;
   background: url(../images/h-decor.png) no-repeat center bottom;
   text-align: center;
@@ -2273,8 +2280,13 @@ button.pull-right,
 .service-item .icon-circle {
   display: block;
   text-decoration: none;
+<<<<<<< HEAD
   width: 100px;
   height: 100px;
+=======
+  width: 150px;
+  height: 150px;
+>>>>>>> da41d016d505c36e5267c24338d149c9bf862d0f
   border-radius: 50%;
   position: relative;
   z-index: 1;
@@ -2289,8 +2301,13 @@ button.pull-right,
   color: #fff;
 }
 .service-item .icon-circle .icon {
+<<<<<<< HEAD
   font-size: 50px;
   line-height: 100px;
+=======
+  font-size: 94px;
+  line-height: 150px;
+>>>>>>> da41d016d505c36e5267c24338d149c9bf862d0f
 }
 .service-item .icon-circle .icon-hover {
   position: absolute;
