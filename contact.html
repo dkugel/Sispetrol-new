@@ -109,6 +109,9 @@
 </head>
 
 <body>
+	<style type="text/css">
+		.escondido{ display: none; }
+	</style>
 	<!-- Loader -->
 	<div id="loader-wrapper" class="loader-off">
 		<div id="loader">
@@ -197,7 +200,9 @@
 					</div>
 					<div class="col-sm-1 visible-lg"></div>
 					<div class="col-sm-7 col-md-8">
-						<form id="contactform" class="contact-form" name="contactform" method="post" novalidate>
+						<form  class="contact-form"  method="post" action="enviar.php" >
+							<input type="text" name="name" placeholder="No llenar, es para evitar spam" class="escondido">
+							<input type="email" name="email" placeholder="No llenar, es para evitar spam" class="escondido" >
 							<div id="success">
 								<p>Your message was sent successfully!</p>
 							</div>
@@ -209,7 +214,7 @@
 									<div class="col-md-6">
 										<div class="input-wrapper">
 											<label>Nombre <span class="required">*</span></label>
-											<input type="text" class="input-custom input-full" name="name" placeholder="Nombre">
+											<input type="text" class="input-custom input-full" name="name2" placeholder="Nombre">
 										</div>
 									</div>
 									<div class="col-md-6">
@@ -221,14 +226,14 @@
 								</div>
 								<div class="input-wrapper">
 									<label>Email</label>
-									<input type="text" class="input-custom input-full" name="email" placeholder="xxxx@xxxx.xxx">
+									<input type="text" class="input-custom input-full" name="email2" placeholder="xxxx@xxxx.xxx">
 								</div>
 							</div>
 							<div>
 								<label>Mensaje</label>
 								<textarea class="textarea-custom input-full" name="message"></textarea>
 							</div>
-							<button type="submit" id="submit" class="btn">Enviar mensaje</button>
+							<input class="btn" type="submit" id="submit" name="submit" value="Enviar mensaje">							
 						</form>
 					</div>
 				</div>
