@@ -7,6 +7,7 @@
 .subtitulo {
     font-size: 30px !important;
     color: #4c4c4c;
+    line-height: 27px;
 }
 .subtitulo p{
     font-size: 25px !important;
@@ -25,4 +26,13 @@
 .carousel-indicators li {
     background-color: #345eb8;
     border: 1px solid #345eb8;
+}
+@media (max-width: 450px) {
+    .carousel-indicators {bottom: -30px !important;}
+    header .phone .number {
+        font-size: 20px;
+        line-height: 23px;
+        text-align: right;
+    }
+    .img-responsive{display: none !important;}
 }
